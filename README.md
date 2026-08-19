@@ -1,6 +1,11 @@
 # LA43S
 Linguagens De Apresentação E Estruturação De Conteúdo - 3º semestre ADS UTFPR
 
+## live-server
+```bash
+npx live-server
+```
+
 ## Sobre a disciplina
 Disciplina do curso de Análise e Desenvolvimento de Sistemas (UTFPR - Campus Pato Branco),
 2º semestre de 2026, turma LA43S-3SI, ministrada pela Profª. Andreia Scariot Beulke.
