@@ -3,21 +3,39 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./css/estilo.css" />
         <title>Pinterest</title>
     </head>
     <body>
-        <aside>
+        <aside class="sidebar">
             <!--logo ogo-->
-            <a href="" style="display: flex; align-items: baseline;">
+            <a href="">
                 <h1>P</h1>
                 <h3>interest</h3>
             </a>
             <!--menu enu-->
-            <nav>
+            <nav class="menu">
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="#">Explorar</a></li>
-                    <li><a href="#">Criados</a></li>
+                    <li>
+                        <a href="index.html" class="active">
+                            <i class="fa-solid fa-house"></i> Início
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Explorar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-square-plus"></i> Criados
+                        </a>
+                    </li>
                 </ul>
                 <a href="#">Criar</a>
             </nav>

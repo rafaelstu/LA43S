@@ -1,0 +1,65 @@
+:root {
+    --velvet-orchid: #55286f; /*velvet orchid*/
+    --wisteria: #bc96e6; /*wisteria*/
+    --pastel-purple: #b19cd9;
+    --pink-orchid: #d8b4e2; /*pink orchid*/
+    --midnight-violet: #210b2c;
+    --ghost-white: #f0f3f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--ghost-white);
+}
+
+body {
+    font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sidebar {
+    border-right: 1px solid #ddd;
+    width: 240px;
+    height: 100vh;
+    padding: 18px 12px;
+}
+
+.menu, .menu ul{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.menu a {
+    border: 1px solid var(--midnight-violet);
+    border-radius: 8px;
+    padding: 4px 8px;
+    width: 100%;
+    font-weight: 600;
+    transition: cubic-bezier();
+    transition-duration: 300ms;
+}
+
+.menu a:hover {
+    background-color: #ccc;
+}
+
+.menu a.active{
+    background-color: var(--midnight-violet);
+    color:var(--pink-orchid)
+}
+
+.menu li {
+    width: 100%;
+    padding: 4px 8px;
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    color: var(--pastel-purple);
+    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+}
