@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
+    /*roxo*/
     --melrose-50: #f0f2fd;
     --melrose-100: #e4e7fb;
     --melrose-200: #cdd2f8;
@@ -13,6 +14,21 @@
     --melrose-900: #403877;
     --melrose-950: #272145;
 
+    /*verde*/
+    --celery-50: #f8faec;
+    --celery-100: #edf4d0;
+    --celery-200: #dfeaa5;
+    --celery-300: #cbdc71;
+    --celery-400: #c1d358;
+    --celery-500: #a6b931;
+    --celery-600: #8d9926;
+    --celery-700: #727821;
+    --celery-800: #606320;
+    --celery-900: #545520;
+    --celery-950: #2f300e;
+
+    --sidebar-width: 240px;
+    --header-height: 60px;
     /*--pink-orchid: #d8b4e2;
     --midnight-violet: #210b2c;
     --velvet-orchid: #55286f;
@@ -27,30 +43,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--melrose-50);
+    transition: cubic-bezier();
+    transition-duration: 500ms;
 }
 
 body {
     font-family: "Figtree", "Montserrat", sans-serif;
     color: var(--melrose-400);
+    background-color: var(--melrose-50);
 }
 
 .menu i {
-    background-color: transparent;
     padding-right: 8px;
 }
 
 .sidebar {
-    border-right: 1px solid #ddd;
-    width: 240px;
+    border-right: 1px solid var(--melrose-100);
+    width: var(--sidebar-width);
     height: 100vh;
     padding: 18px 12px;
+    position: fixed;
 }
 
 .logo {
     gap: 8px;
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .logo-icon {
@@ -85,8 +104,6 @@ body {
     padding: 10px;
     width: 100%;
     font-weight: 600;
-    transition: cubic-bezier();
-    transition-duration: 500ms;
     display: block;
 }
 
@@ -152,4 +169,112 @@ a {
     font-size: 12px;
     color: var(--melrose-400);
     font-weight: 100;
+}
+
+/*barra superior*/
+.topbar {
+    position: fixed;
+    top: 0;
+    left: var(--sidebar-width);
+    right: 0;
+    height: var(--header-height);
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--melrose-50);
+    z-index: 1;
+
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: var(--melrose-100);
+    border-radius: 28px;
+    width: 80%;
+}
+
+.search-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: var(--melrose-400);
+    background-color: transparent;
+    outline: none;
+}
+
+.search-box i {
+    margin: 12px;
+}
+
+.topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.topbar-actions button {
+    cursor: pointer;
+    border: none;
+    color: var(--melrose-400);
+}
+
+.content {
+    margin-left: var(--sidebar-width);
+    margin-top: var(--header-height);
+    padding: 16px;
+    background-color: var(--melrose-100);
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.card {
+    position: relative;
+    box-shadow: 0 0 4px 0;
+    scale: 95%;
+    border-radius: 8px;
+    background-color: var(--melrose-50);
+}
+
+.card:hover {
+    scale: 100%;
+    box-shadow: 0 0 8px 0;
+
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.save-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.card-info {
+    padding: 16px 8px 4px;
+    background-color: var(--melrose-50);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.card-title {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.card-category {
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 300;
 }

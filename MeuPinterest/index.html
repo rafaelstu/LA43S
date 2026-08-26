@@ -22,7 +22,8 @@
                 <ul>
                     <li>
                         <a href="index.html" class="active">
-                            <i class="bg-transparent fa-solid fa-house"></i> Início
+                            <i class="bg-transparent fa-solid fa-house"></i>
+                            Início
                         </a>
                     </li>
                     <li>
@@ -48,5 +49,215 @@
                 </div>
             </div>
         </aside>
+        <header class="topbar">
+            <div
+                onclick="document.getElementById('input').focus()"
+                class="search-box"
+            >
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="input" type="search" placeholder="Pesquisar" />
+            </div>
+            <div class="topbar-actions">
+                <button><i class="fa-solid fa-message"></i></button>
+                <button><i class="fa-solid fa-envelope"></i></button>
+                <button><i class="fa-solid fa-user"></i></button>
+            </div>
+        </header>
+
+        <main class="content">
+            <div class="content-header">
+                <h1>Inspirações</h1>
+            </div>
+
+            <div class="grid">
+                <article class="card">
+                    <img
+                        src="https://picsum.photos/500/700?random=1"
+                        alt="Imagem aleatória do picsum"
+                        title="Imagem aleatória do picsum"
+                    />
+                    <button class="save-button" aria-label="Salvar imagem">
+                        Salvar
+                    </button>
+                    <div class="card-info">
+                        <h1 class="card-title">Título da imagem</h1>
+                        <p class="card-category">Descrição da imagem</p>
+                    </div>
+                </article>
+                <!-- CARD 2 -->
+                <article class="card">
+                    <img
+                        src="https://picsum.photos/500/600?random=2"
+                        alt="Moda feminina"
+                    />
+                    <button class="save-button">Salvar</button>
+                    <div class="card-info">
+                        <div class="card-title">Moda feminina</div>
+                        <div class="card-category">Moda</div>
+                    </div>
+                </article>
+                <!-- CARD 3 -->
+                <article class="card">
+                    <img
+                        src="https://picsum.photos/500/750?random=3"
+                        alt="Receitas"
+                    />
+                    <button class="save-button">Salvar</button>
+                    <div class="card-info">
+                        <div class="card-title">Receitas fáceis</div>
+                        <div class="card-category">Receitas</div>
+                    </div>
+                </article>
+                <!-- CARD 4 -->
+                <article class="card">
+                    <img
+                        src="https://picsum.photos/500/500?random=4"
+                        alt="Jardim"
+                    />
+                    <button class="save-button">Salvar</button>
+                    <div class="card-info">
+                        <div class="card-title">Ideias para jardim</div>
+                        <div class="card-category">Jardim</div>
+                    </div>
+                </article>
+
+                <!-- CARD 5 -->
+                <article
+                    class="card"
+                    data-title="Arquitetura moderna"
+                    data-category="arquitetura casa design"
+                >
+                    <img
+                        src="https://picsum.photos/500/800?random=5"
+                        alt="Arquitetura moderna"
+                    />
+                    <button class="save-button">Salvar</button>
+                    <div class="card-info">
+                        <div class="card-title">Arquitetura moderna</div>
+                        <div class="card-category">Arquitetura</div>
+                    </div>
+                </article>
+
+                <!-- CARD 6 -->
+                <article
+                    class="card"
+                    data-title="Cozinha planejada"
+                    data-category="cozinha casa decoração"
+                >
+                    <img
+                        src="https://picsum.photos/500/650?random=6"
+                        alt="Cozinha planejada"
+                    />
+                    <button class="save-button">Salvar</button>
+                    <div class="card-info">
+                        <div class="card-title">Cozinha planejada</div>
+                        <div class="card-category">Casa</div>
+                    </div>
+                </article>
+
+                <!-- CARD 7 -->
+                <article
+                    class="card"
+                    data-title="Viagem e turismo"
+                    data-category="viagem turismo férias"
+                >
+                    <img
+                        src="https://picsum.photos/500/720?random=7"
+                        alt="Viagem"
+                    />
+                    <button class="save-button">Salvar</button>
+                    <div class="card-info">
+                        <div class="card-title">Viagem e turismo</div>
+                        <div class="card-category">Viagens</div>
+                    </div>
+                </article>
+
+                <!-- CARD 8 -->
+                <article
+                    class="card"
+                    data-title="Quarto aconchegante"
+                    data-category="quarto decoração casa"
+                >
+                    <img
+                        src="https://picsum.photos/500/550?random=8"
+                        alt="Quarto"
+                    />
+                    <button class="save-button">Salvar</button>
+                    <div class="card-info">
+                        <div class="card-title">Quarto aconchegante</div>
+                        <div class="card-category">Decoração</div>
+                    </div>
+                </article>
+
+                <!-- CARD 9 -->
+                <article
+                    class="card"
+                    data-title="Look casual"
+                    data-category="moda roupas look"
+                >
+                    <img
+                        src="https://picsum.photos/500/680?random=9"
+                        alt="Look casual"
+                    />
+                    <button class="save-button">Salvar</button>
+                    <div class="card-info">
+                        <div class="card-title">Look casual</div>
+                        <div class="card-category">Moda</div>
+                    </div>
+                </article>
+
+                <!-- CARD 10 -->
+                <article
+                    class="card"
+                    data-title="Plantas para casa"
+                    data-category="plantas natureza casa jardim"
+                >
+                    <img
+                        src="https://picsum.photos/500/600?random=10"
+                        alt="Plantas"
+                    />
+                    <button class="save-button">Salvar</button>
+                    <div class="card-info">
+                        <div class="card-title">Plantas para casa</div>
+                        <div class="card-category">Plantas</div>
+                    </div>
+                </article>
+
+                <!-- CARD 11 -->
+                <article
+                    class="card"
+                    data-title="Café da manhã"
+                    data-category="comida receitas cozinha café"
+                >
+                    <img
+                        src="https://picsum.photos/500/700?random=11"
+                        alt="Café da manhã"
+                    />
+                    <button class="save-button">Salvar</button>
+                    <div class="card-info">
+                        <div class="card-title">Café da manhã</div>
+                        <div class="card-category">Receitas</div>
+                    </div>
+                </article>
+
+                <!-- CARD 12 -->
+
+                <article
+                    class="card"
+                    data-title="Sala moderna"
+                    data-category="sala decoração casa design"
+                >
+                    <img
+                        src="https://picsum.photos/500/580?random=12"
+                        alt="Sala moderna"
+                    />
+                    <button class="save-button">Salvar</button>
+                    <div class="card-info">
+                        <div class="card-title">Sala moderna</div>
+                        <div class="card-category">Decoração</div>
+                    </div>
+                </article>
+            </div>
+        </main>
     </body>
 </html>
