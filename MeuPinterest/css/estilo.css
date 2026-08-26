@@ -1,21 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
-    --velvet-orchid: #55286f; /*velvet orchid*/
-    --wisteria: #bc96e6; /*wisteria*/
-    --pastel-purple: #b19cd9;
-    --pink-orchid: #d8b4e2; /*pink orchid*/
+    --melrose-50: #f0f2fd;
+    --melrose-100: #e4e7fb;
+    --melrose-200: #cdd2f8;
+    --melrose-300: #b5baf3;
+    --melrose-400: #8f8fea;
+    --melrose-500: #7b73e1;
+    --melrose-600: #6a58d3;
+    --melrose-700: #5c49b9;
+    --melrose-800: #4b3d96;
+    --melrose-900: #403877;
+    --melrose-950: #272145;
+
+    /*--pink-orchid: #d8b4e2;
     --midnight-violet: #210b2c;
-    --ghost-white: #f0f3f9;
+    --velvet-orchid: #55286f;
+    --wisteria: #bc96e6;
+    --pastel-purple: #b19cd9;
+    --pink-champagne: #e6ddfb;
+    --foundation-white: #eeeafc;
+    --ghost-white: #f0f3f9;*/
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--ghost-white);
+    background-color: var(--melrose-50);
 }
 
 body {
-    font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Figtree", "Montserrat", sans-serif;
+    color: var(--melrose-400);
+}
+
+.menu i {
+    background-color: transparent;
+    padding-right: 8px;
 }
 
 .sidebar {
@@ -25,41 +47,109 @@ body {
     padding: 18px 12px;
 }
 
-.menu, .menu ul{
+.logo {
+    gap: 8px;
     display: flex;
-    flex-direction: column;
-    gap:8px;
+    align-items: center;
 }
 
+.logo-icon {
+    background-color: var(--melrose-500);
+    color: var(--melrose-50);
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-size: 26px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.menu,
+.menu ul {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}*/
+
 .menu a {
-    border: 1px solid var(--midnight-violet);
-    border-radius: 8px;
-    padding: 4px 8px;
+    /*border: 1px solid var(--midnight-violet);*/
+    border-radius: 10px;
+    padding: 10px;
     width: 100%;
     font-weight: 600;
     transition: cubic-bezier();
-    transition-duration: 300ms;
+    transition-duration: 500ms;
+    display: block;
 }
 
 .menu a:hover {
-    background-color: #ccc;
+    background-color: var(--melrose-900);
+    font-weight: 700;
 }
 
-.menu a.active{
-    background-color: var(--midnight-violet);
-    color:var(--pink-orchid)
+.menu a.active {
+    background-color: var(--melrose-950);
+    color: var(--melrose-400);
 }
 
 .menu li {
     width: 100%;
-    padding: 4px 8px;
+    padding: 10px;
     padding-left: 0;
     list-style: none;
 }
 
+.menu > a {
+    background-color: var(--melrose-100);
+    width: calc(100% - 10px);
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
 a {
-    color: var(--pastel-purple);
+    color: var(--melrose-400);
     text-decoration: none;
     display: flex;
     align-items: baseline;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    bottom: 10px;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color: var(--melrose-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-size: 14px;
+}
+
+.profile-text {
+    margin-top: 3px;
+    font-size: 12px;
+    color: var(--melrose-400);
+    font-weight: 100;
 }
