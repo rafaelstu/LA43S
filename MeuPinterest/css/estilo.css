@@ -1,31 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-    /*roxo*/
-    --primary-50: #f0f2fd;
-    --primary-100: #e4e7fb;
-    --primary-200: #cdd2f8;
-    --primary-300: #b5baf3;
-    --primary-400: #8f8fea;
-    --primary-500: #7b73e1;
-    --primary-600: #6a58d3;
-    --primary-700: #5c49b9;
-    --primary-800: #4b3d96;
-    --primary-900: #403877;
-    --primary-950: #272145;
-
     /*verde*/
-    --secondary-50: #f8faec;
-    --secondary-100: #edf4d0;
-    --secondary-200: #dfeaa5;
-    --secondary-300: #cbdc71;
-    --secondary-400: #c1d358;
-    --secondary-500: #a6b931;
-    --secondary-600: #8d9926;
-    --secondary-700: #727821;
-    --secondary-800: #606320;
-    --secondary-900: #545520;
-    --secondary-950: #2f300e;
+    --primary-50: #f6f6ef;
+    --primary-100: #ebebdc;
+    --primary-200: #d8d9bd;
+    --primary-300: #bfc195;
+    --primary-400: #a4a873;
+    --primary-500: #888d55;
+    --primary-600: #6a6f41;
+    --primary-700: #525635;
+    --primary-800: #43462e;
+    --primary-900: #3a3d2a;
+    --primary-950: #1e2013;
+    /*roxo*/
+    --secondary-50: #f0f2fd;
+    --secondary-100: #e4e7fb;
+    --secondary-200: #cdd2f8;
+    --secondary-300: #b5baf3;
+    --secondary-400: #8f8fea;
+    --secondary-500: #7b73e1;
+    --secondary-600: #6a58d3;
+    --secondary-700: #5c49b9;
+    --secondary-800: #4b3d96;
+    --secondary-900: #403877;
+    --secondary-950: #272145;
 
     --sidebar-width: 240px;
     --header-height: 60px;
@@ -57,11 +56,12 @@ body {
 }
 
 .sidebar {
-    border-right: 1px solid var(--primary-100);
+    border-right: 1px solid var(--primary-200);
     width: var(--sidebar-width);
     height: 100vh;
     padding: 18px 12px;
     position: fixed;
+    z-index: 2;
 }
 
 .logo {
@@ -131,6 +131,10 @@ body {
     text-align: center;
     font-size: 16px;
     margin-top: 20px;
+}
+
+button {
+    background-color: transparent;
 }
 
 a {
@@ -254,12 +258,12 @@ a {
 
 .content {
     margin-left: var(--sidebar-width);
-    margin-top: var(--header-height);
-    padding: 16px;
+    padding-top: calc(var(--header-height) + 16px);
     background-color: var(--primary-100);
 }
 
 .grid {
+    /*padding: 0 16px;*/
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
@@ -322,4 +326,60 @@ a {
     margin-top: 5px;
     font-size: 13px;
     font-weight: 300;
+}
+
+.depositions {
+    margin-top: 32px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--primary-200);
+}
+
+.depositions-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    place-items: center;
+}
+
+.depositions-header h1 {
+    color: var(--primary-700);
+    font-weight: 700;
+}
+
+.depositions-header p {
+    width: 50%;
+    justify-self: center;
+    font-weight: 300;
+}
+
+.card-depositions {
+    position: relative;
+    box-shadow: 0 0 4px 0;
+    scale: 95%;
+    border-radius: 8px;
+    background-color: var(--primary-50);
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.card-depositions:hover {
+    scale: 100%;
+    box-shadow: 0 0 8px 0;
+}
+
+.content-depositions{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.avatar {
+    width: 96px;
+    height: 96px;
 }
