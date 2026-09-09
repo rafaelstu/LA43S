@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
     /*verde*/
@@ -357,29 +357,75 @@ a {
 }
 
 .card-depositions {
-    position: relative;
-    box-shadow: 0 0 4px 0;
-    scale: 95%;
-    border-radius: 8px;
-    background-color: var(--primary-50);
-    max-width: 1400px;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1.5rem;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
-.card-depositions:hover {
-    scale: 100%;
-    box-shadow: 0 0 8px 0;
-}
-
-.content-depositions{
+.content-depositions {
+    position: relative;
     display: flex;
     flex-direction: column;
+    padding: 16px;
+    box-shadow: 0 0 4px 0;
+    border-radius: 16px;
+    background-color: var(--primary-50);
+    justify-content: center;
+    align-items: center;
+    min-height: 330px;
+}
 
+.content-depositions:hover {
+    box-shadow: 0 0 8px 0;
+    transform: translateY(-8px);
+}
+
+.quote-icon {
+    position: absolute;
+    font-size: 128px;
+    color: var(--primary-200);
+    font-family: "Alex Brush";
+    top: -32px;
+    right: 16px;
 }
 
 .avatar {
     width: 96px;
     height: 96px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 8px 2px var(--secondary-700);
+}
+
+.deposition-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.deposition-info h1 {
+    font-size: 16px;
+}
+
+.deposition-role {
+    font-size: 14px;
+}
+
+.deposition-info p {
+    font-size: 12px;
+}
+
+.stars {
+    margin: 12px 0;
+    color: var(--secondary-300);
+}
+
+.footer {
+    width: 100%;
+    height: 256px;
+    background-color: var(--primary-950);
+    display:flex;
 }
