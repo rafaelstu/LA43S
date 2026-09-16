@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    /*verde*/
+    --primary-50: #f6f6ef;
+    --primary-100: #ebebdc;
+    --primary-200: #d8d9bd;
+    --primary-300: #bfc195;
+    --primary-400: #a4a873;
+    --primary-500: #888d55;
+    --primary-600: #6a6f41;
+    --primary-700: #525635;
+    --primary-800: #43462e;
+    --primary-900: #3a3d2a;
+    --primary-950: #1e2013;
+    /*roxo*/
+    --secondary-50: #f0f2fd;
+    --secondary-100: #e4e7fb;
+    --secondary-200: #cdd2f8;
+    --secondary-300: #b5baf3;
+    --secondary-400: #8f8fea;
+    --secondary-500: #7b73e1;
+    --secondary-600: #6a58d3;
+    --secondary-700: #5c49b9;
+    --secondary-800: #4b3d96;
+    --secondary-900: #403877;
+    --secondary-950: #272145;
+
+    --sidebar-width: 240px;
+    --header-height: 60px;
+    /*--pink-orchid: #d8b4e2;
+    --midnight-violet: #210b2c;
+    --velvet-orchid: #55286f;
+    --wisteria: #bc96e6;
+    --pastel-purple: #b19cd9;
+    --pink-champagne: #e6ddfb;
+    --foundation-white: #eeeafc;
+    --ghost-white: #f0f3f9;*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 300ms ease-out;
+}
+
+body {
+    font-family: "Figtree", "Montserrat", sans-serif;
+    color: var(--primary-400);
+    background-color: var(--primary-100);
+}
+
+input,
+select,
+textarea {
+    padding: 8px;
+    border: solid 1px var(--secondary-300);
+    border-radius: 5px;
+    width: 100%;
+}
+
+label {
+    font-weight: 600;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: var(--primary-50);
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px var(--primary-900);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.form-group-1 {
+    flex: 1 1 100%;
+}
+.form-group-2 {
+    flex: 1 1 45%;
+}
+.form-group-3 {
+    flex: 1 1 30%;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 12px;
+}
+.radio-group > label,
+.checkbox-group > label {
+    display: flex;
+    gap: 4px;
+}
+
+.enviar {
+    margin: auto;
+    width: 20%;
+    background-color: var(--primary-500);
+    color: var(--primary-50);
+    font-weight: 600;
+}
+.enviar:hover {
+    background-color: var(--primary-700);
+    font-size: 14px;
+}
