@@ -1,18 +1,22 @@
 # LA43S
+
 Linguagens De Apresentação E Estruturação De Conteúdo - 3º semestre ADS UTFPR
 
 ## live-server
+
 ```bash
 npx live-server
 ```
 
 ## Sobre a disciplina
+
 Disciplina do curso de Análise e Desenvolvimento de Sistemas (UTFPR - Campus Pato Branco),
 2º semestre de 2026, turma LA43S-3SI, ministrada pela Profª. Andreia Scariot Beulke.
 
 Foco no desenvolvimento front-end, desde a estruturação de conteúdo até a criação de aplicações web interativas.
 
 ## Resumo do que será feito
+
 O semestre é organizado em torno do desenvolvimento de um projeto prático, passando por:
 
 - **HTML** (Semanas 1 e 6): estrutura de documentos, tags semânticas (header, nav, section, footer, article, div), textos e listas, imagens e formulários/tabelas.
@@ -25,5 +29,6 @@ O semestre é organizado em torno do desenvolvimento de um projeto prático, pas
 - **Entregas** (Semanas 16-18): apresentação/defesa de autoria (S16), avaliação prática e teórica (S17) e reapresentação (S18).
 
 ## Avaliação
+
 - Projeto da disciplina desenvolvido ao longo do semestre (CCH).
 - Avaliação prática e teórica (peso 10), em ?/?/2026.
