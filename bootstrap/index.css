@@ -60,6 +60,9 @@
     width: calc(100% - var(--sidebar-width));
 }
 
-.banner{
+.banner {
     min-height: 50vh;
+    background: linear-gradient(to left, #a4a87399,  #a4a87366), url(https://plus.unsplash.com/premium_photo-1770025113283-8b16e75f56e4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE4fGlVSXNuVnRqQjBZfHxlbnwwfHx8fHw%3D)
+        100% / cover
+        ;
 }
