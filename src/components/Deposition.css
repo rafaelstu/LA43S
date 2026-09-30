@@ -1,0 +1,194 @@
+
+.depositions {
+    /* padding: 4rem 2rem; */
+    /* margin-left: 240px; */
+    background-color: #f7f8fa;
+}
+
+
+/* Cabeçalho */
+
+.depositions-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.depositions-header span {
+    display: inline-block;
+
+    margin-bottom: 0.5rem;
+
+    color: #e60023;
+
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.depositions-header h1 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.depositions-header p {
+    max-width: 600px;
+
+    margin: 0.8rem auto 0;
+
+    color: #718096;
+
+    line-height: 1.6;
+}
+
+
+/* grid dos cards */
+
+.card-depositions {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 1.5rem;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+
+/* card */
+
+.content-depositions {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 330px;
+
+    padding: 2rem 1.5rem;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+
+    box-shadow: 0 4px 15px rgba(23, 32, 51, 0.06);
+
+    text-align: center;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+/* Efeito hover */
+
+.content-depositions:hover {
+    transform: translateY(-6px);
+
+    /* border-color: #e60023; */
+
+    box-shadow: 0 12px 30px rgba(23, 32, 51, 0.12);
+}
+
+
+/* aspas */
+
+.quote-icon {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    color: #e60023;
+    font-family: Georgia, serif;
+    font-size: 3.5rem;
+    line-height: 1;
+    opacity: 0.15;
+}
+
+
+/* avatar */
+
+.avatar {
+    margin-bottom: 1rem;
+}
+
+.avatar img {
+    width: 78px;
+    height: 78px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 4px solid #ffffff;
+
+    box-shadow:
+        0 0 0 2px #e60023,
+        0 5px 15px rgba(23, 32, 51, 0.12);
+}
+
+
+/* informações */
+.deposition-info h3 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.deposition-role {
+    display: block;
+
+    margin-top: 0.25rem;
+
+    color: #8a94a6;
+
+    font-size: 0.78rem;
+}
+
+/* estrelas */
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+
+    margin: 0.8rem 0;
+
+    color: #f5b301;
+
+    font-size: 0.8rem;
+}
+
+.stars i {
+    transition: transform 0.2s ease;
+}
+
+.content-depositions:hover .stars i {
+    transform: scale(1.1);
+}
+
+
+/* texto */
+
+.deposition-info p {
+    margin: 0;
+
+    color: #5f6b7a;
+
+    font-size: 0.88rem;
+
+    line-height: 1.7;
+}
