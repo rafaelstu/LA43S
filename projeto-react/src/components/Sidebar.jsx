@@ -11,7 +11,7 @@ export function Sidebar() {
       <NavLink to="/" className="logo">
         <h1>P</h1>
         <h2>Pinterest</h2>
-      </NavLink> 
+      </NavLink>
       <nav className="menu">
         <ul>
           <li>
