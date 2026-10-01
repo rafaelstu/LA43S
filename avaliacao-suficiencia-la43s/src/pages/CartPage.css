@@ -1,0 +1,15 @@
+.cart-page-title {
+    display: flex;
+    width: 100%;
+    margin-bottom: 32px;
+    gap: 8px;
+}
+
+.cart-page-title * {
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    gap: 48px;
+}
